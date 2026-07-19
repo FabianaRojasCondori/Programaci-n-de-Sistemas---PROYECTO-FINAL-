@@ -185,14 +185,46 @@ void iniciarDescarga()
     }
 
 
-    strcpy(cola[posicion].estado, "Descargando");
+    strcpy(cola[posicion].estado, "Completada");
 
 
-    guardarEvento("Inicio de descarga");
+char rutaArchivo[200];
+
+sprintf(rutaArchivo, "downloads/%s", cola[posicion].nombre);
 
 
-    printf("\nDescargando %s...\n", cola[posicion].nombre);
+FILE *archivo;
 
+archivo = fopen(rutaArchivo, "w");
+
+
+if(archivo != NULL)
+{
+    fprintf(archivo,
+            "Archivo descargado correctamente.\n");
+    
+    fprintf(archivo,
+            "Nombre: %s\n",
+            cola[posicion].nombre);
+
+    fprintf(archivo,
+            "Tamano: %d MB\n",
+            cola[posicion].tamano);
+
+    fclose(archivo);
+
+    printf("\nArchivo creado en: %s\n", rutaArchivo);
+}
+else
+{
+    printf("\nNo se pudo crear el archivo.\n");
+}
+
+
+guardarEvento("Descarga completada");
+
+
+printf("\nDescarga finalizada correctamente.\n");
 
     for(int progreso = 0; progreso <= 100; progreso += 20)
     {

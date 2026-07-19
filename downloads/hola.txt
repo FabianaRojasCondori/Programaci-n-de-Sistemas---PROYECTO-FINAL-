@@ -1,0 +1,3 @@
+Archivo descargado correctamente.
+Nombre: hola.txt
+Tamano: 1 MB
