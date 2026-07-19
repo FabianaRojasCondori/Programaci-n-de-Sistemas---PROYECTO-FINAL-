@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "../include/archivos.h"
 #include "../include/backups.h"
+#include "../include/bash_parser.h"
+#include "../include/descargas.h"
 
 int main() {
     int opcion;
@@ -34,10 +36,10 @@ int main() {
                 menuBackups();
                 break;
             case 5:
-                printf("Entrando al Analizador Bash...\n");
+                menuBashParser();
                 break;
             case 6:
-                printf("Entrando a la Cola de descargas...\n");
+                menuDescargas();
                 break;
             case 0:
                 printf("Hasta luego.\n");
