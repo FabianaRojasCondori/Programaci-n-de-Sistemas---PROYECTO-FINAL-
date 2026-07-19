@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "../include/archivos.h"
+#include "../include/backups.h"
 
 int main() {
     int opcion;
@@ -23,13 +25,13 @@ int main() {
                 printf("Entrando al Administrador de procesos...\n");
                 break;
             case 2:
-                printf("Entrando al Shell de archivos...\n");
+                menuArchivos();
                 break;
             case 3:
                 printf("Entrando a Ejecutar comandos...\n");
                 break;
             case 4:
-                printf("Entrando al Sistema de respaldos...\n");
+                menuBackups();
                 break;
             case 5:
                 printf("Entrando al Analizador Bash...\n");
