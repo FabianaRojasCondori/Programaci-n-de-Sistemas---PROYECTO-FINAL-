@@ -1,0 +1,34 @@
+# Archivos generados por el programa
+bin/
+historial/
+logs/
+backups/
+downloads/
+
+# Archivos objeto y ejecutables
+*.o
+*.exe
+*.out
+admin_linux
+
+# Archivos de respaldo de editores
+*~
+*.swp
+*.swo
+.*.swp
+.*.swo
+
+# Archivos de compilación temporal
+*.d
+*.dll
+*.so
+*.a
+
+# Archivos de depuración
+*.log
+*.txt.log
+
+#VS Code / IDE
+.vscode/
+.idea/
+*.iml
