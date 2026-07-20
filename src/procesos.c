@@ -109,3 +109,40 @@ void finalizarProceso() {
     }
 }
 
+void suspenderProceso() {
+    int pid;
+    printf("Ingrese el PID del proceso a suspender: ");
+    scanf("%d", &pid);
+    getchar();
+    if (kill(pid, SIGSTOP) == 0) {
+        printf("Proceso %d suspendido.\n", pid);
+    } else {
+        perror("Error al suspender el proceso");
+    }
+}
+
+void reanudarProceso() {
+    int pid;
+    printf("Ingrese el PID del proceso a reanudar: ");
+    scanf("%d", &pid);
+    getchar();
+    if (kill(pid, SIGCONT) == 0) {
+        printf("Proceso %d reanudado.\n", pid);
+    } else {
+        perror("Error al reanudar el proceso");
+    }
+}
+
+void arbolProcesos() {
+    printf("\n--- Árbol de procesos (pstree -p) ---\n");
+    pid_t pid = fork();
+    if (pid == 0) {
+        execlp("pstree", "pstree", "-p", NULL);
+        perror("Error al ejecutar pstree");
+        exit(EXIT_FAILURE);
+    } else if (pid > 0) {
+        wait(NULL);
+    } else {
+        perror("Error en fork");
+    }
+}
