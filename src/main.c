@@ -3,6 +3,8 @@
 #include "../include/backups.h"
 #include "../include/bash_parser.h"
 #include "../include/descargas.h"
+#include "../include/procesos.h"
+#include "../include/comandos.h"
 
 int main() {
     int opcion;
@@ -24,13 +26,13 @@ int main() {
 
         switch(opcion) {
             case 1:
-                printf("Entrando al Administrador de procesos...\n");
+                menuProcesos();
                 break;
             case 2:
                 menuArchivos();
                 break;
             case 3:
-                printf("Entrando a Ejecutar comandos...\n");
+                menuComandos();
                 break;
             case 4:
                 menuBackups();
