@@ -83,3 +83,29 @@ void buscarProceso() {
     }
 }
 
+void mostrarCPUyMemoria() {
+    printf("\n--- Consumo de CPU y memoria (top 5 procesos) ---\n");
+    pid_t pid = fork();
+    if (pid == 0) {
+        execlp("sh", "sh", "-c", "ps aux --sort=-%cpu | head -6", NULL);
+        perror("Error al ejecutar ps");
+        exit(EXIT_FAILURE);
+    } else if (pid > 0) {
+        wait(NULL);
+    } else {
+        perror("Error en fork");
+    }
+}
+
+void finalizarProceso() {
+    int pid;
+    printf("Ingrese el PID del proceso a finalizar: ");
+    scanf("%d", &pid);
+    getchar();
+    if (kill(pid, SIGTERM) == 0) {
+        printf("Proceso %d finalizado correctamente.\n", pid);
+    } else {
+        perror("Error al finalizar el proceso");
+    }
+}
+
