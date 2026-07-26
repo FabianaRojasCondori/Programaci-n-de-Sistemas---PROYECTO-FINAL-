@@ -63,7 +63,7 @@ El sistema implementa los siguientes módulos:
 Clonar el repositorio:
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/FabianaRojasCondori/Programaci-n-de-Sistemas---PROYECTO-FINAL-.git
 cd Programacion-de-Sistemas---PROYECTO-FINAL
 ```
 
