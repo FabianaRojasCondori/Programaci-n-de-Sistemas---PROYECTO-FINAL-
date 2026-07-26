@@ -5,11 +5,14 @@
 #include "../include/descargas.h"
 #include "../include/procesos.h"
 #include "../include/comandos.h"
+#include "../include/sistema.h"
 
-int main() {
+int main()
+{
     int opcion;
 
-    do {
+    do
+    {
         printf("\n=============================\n");
         printf("     ADMIN LINUX\n");
         printf("=============================\n");
@@ -19,38 +22,43 @@ int main() {
         printf("4. Sistema de respaldos\n");
         printf("5. Analizador Bash\n");
         printf("6. Cola de descargas\n");
+        printf("7. Informacion del sistema\n");
         printf("0. Salir\n");
         printf("=============================\n");
         printf("Seleccione una opcion: ");
         scanf("%d", &opcion);
 
-        switch(opcion) {
-            case 1:
-                menuProcesos();
-                break;
-            case 2:
-                menuArchivos();
-                break;
-            case 3:
-                menuComandos();
-                break;
-            case 4:
-                menuBackups();
-                break;
-            case 5:
-                menuBashParser();
-                break;
-            case 6:
-                menuDescargas();
-                break;
-            case 0:
-                printf("Hasta luego.\n");
-                break;
-            default:
-                printf("Opcion invalida.\n");
+        switch (opcion)
+        {
+        case 1:
+            menuProcesos();
+            break;
+        case 2:
+            menuArchivos();
+            break;
+        case 3:
+            menuComandos();
+            break;
+        case 4:
+            menuBackups();
+            break;
+        case 5:
+            menuBashParser();
+            break;
+        case 6:
+            menuDescargas();
+            break;
+        case 7:
+            menuSistema();
+            break;
+        case 0:
+            printf("Hasta luego.\n");
+            break;
+        default:
+            printf("Opcion invalida.\n");
         }
 
-    } while(opcion != 0);
+    } while (opcion != 0);
 
     return 0;
 }

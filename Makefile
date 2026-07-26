@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Iinclude
-SRC = src/main.c src/procesos.c src/comandos.c src/archivos.c src/backups.c src/bash_parser.c src/descargas.c
+SRC = src/main.c src/procesos.c src/comandos.c src/archivos.c src/backups.c src/bash_parser.c src/descargas.c src/sistema.c
 OBJ = $(SRC:.c=.o)
 TARGET = bin/admin_linux
 
