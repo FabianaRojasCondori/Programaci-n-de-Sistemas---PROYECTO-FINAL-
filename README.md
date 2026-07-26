@@ -16,7 +16,7 @@
 
 **ADMIN LINUX** es un proyecto desarrollado en lenguaje C como trabajo final del curso de **Programación de Sistemas**. La aplicación integra diferentes herramientas de administración para sistemas Linux mediante una interfaz basada en menús, permitiendo gestionar procesos, archivos, respaldos, comandos del sistema, análisis de scripts Bash y una cola de descargas.
 
-El proyecto tiene como finalidad aplicar conceptos fundamentales de programación de sistemas, tales como el uso de procesos, llamadas al sistema, manejo de archivos, modularización del código y automatización de tareas en entornos Linux.
+El proyecto tiene como finalidad aplicar conceptos fundamentales de programación de sistemas, tales como el uso de procesos, llamadas al sistema, manejo de archivos, ejecución de comandos del sistema operativo, modularización del código y automatización de tareas en entornos Linux.
 
 ---
 
@@ -30,6 +30,7 @@ El sistema implementa los siguientes módulos:
 - Sistema de creación y restauración de respaldos.
 - Analizador de scripts Bash.
 - Cola de descargas.
+- Información del sistema, permitiendo consultar datos del sistema operativo, procesador, memoria RAM, espacio en disco, tiempo activo y usuario actual.
 
 ---
 
@@ -98,6 +99,7 @@ Una vez compilado el proyecto, ejecutar:
 4. Sistema de respaldos
 5. Analizador Bash
 6. Cola de descargas
+7. Informacion del Sistema
 0. Salir
 ```
 
@@ -111,9 +113,12 @@ Durante el desarrollo del proyecto se aplicaron los siguientes conceptos de Prog
 - Llamadas al sistema (System Calls).
 - Manejo de archivos.
 - Ejecución de comandos del sistema operativo.
+- Obtención de información del sistema mediante comandos Linux.
 - Automatización mediante Bash.
 - Modularización del código.
 - Compilación mediante Makefiles.
+- Obtención de información del sistema mediante comandos Linux.
+- Creación y sincronización de procesos mediante fork(), exec() y wait().
 
 ---
 
