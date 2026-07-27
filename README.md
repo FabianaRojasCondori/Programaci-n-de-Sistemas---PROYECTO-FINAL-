@@ -1,16 +1,51 @@
-# ADMIN LINUX
+<!-- Contenedor principal centrado -->
+<div align="center">
 
-## Universidad Nacional de San Agustín de Arequipa
+  <!-- Contenedor para logo y título -->
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <!-- Imagen superior izquierda -->
+    <div style="display: inline-block; vertical-align: middle;">
+      <img src="LOGO_UNSA.png" alt="Logo UNSA" width="120"/>
+    </div>
+    <!-- Espacio entre imagen y título -->
+    <div style="display: inline-block; width: 20px;"></div>
+    <!-- Título principal -->
+    <div style="display: inline-block; vertical-align: middle;">
+      <h1 style="margin: 0;">UNIVERSIDAD NACIONAL DE SAN AGUSTÍN</h1>
+    </div>
+  </div>
 
-**Curso:** Programación de Sistemas  
-**Grupo:** A
+  <!-- Imagen central debajo del título -->
+  <p align="center">
+    <img src="Escudo_UNSA.png" alt="Escudo UNSA" width="200"/>
+  </p>
 
-### Integrantes
+  <!-- Facultad y Escuela -->
+  <div style="text-align: center; margin-top: 20px;">
+    <h2 style="margin: 0;">FACULTAD DE INGENIERÍA DE PRODUCCIÓN Y SERVICIOS</h2>
+    <h3 style="margin: 0; font-weight: normal;">ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS</h3>
+  </div>
 
-- Condori Catunta Joselin Sharon 
-- Rojas Condori Fabiana Paola
+  <!-- Contenido centrado -->
+  <p align="center">
+    <strong>DOCENTE:</strong><br>
+    NORMAN PATRICK HARVEY ARCE<br><br>
+    <strong>CURSO:</strong><br>
+    PROGRAMACIÓN DE SISTEMAS - TEORIA GRUPO A<br><br>
+    <strong>TEMA:</strong><br>
+    PROYECTO FINAL: PROGRAMA ADMIN EN LINUX<br><br>
+    <strong>CARRERA:</strong><br>
+    ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS<br><br>
+    <strong>INTEGRANTES:</strong><br>
+    CONDORI CATUNTA, JOSELIN SHARON<BR>
+    ROJAS CONDORI, FABIANA PAOLA<br>
+    SCHREIBER LANDEO, DIEGO HANS<br>
+    AREQUIPA-PERÚ<br>
+    2026
+  </p>
+</div>
 
----
+------------
 
 ## Descripción
 
