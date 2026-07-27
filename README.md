@@ -65,7 +65,7 @@ El sistema implementa los siguientes módulos:
 - Sistema de creación y restauración de respaldos.
 - Analizador de scripts Bash.
 - Cola de descargas.
-- Información del sistema, permitiendo consultar datos del sistema operativo, procesador, memoria RAM, espacio en disco, tiempo activo y usuario actual.
+- Información del sistema, monitoreo de recursos y datos principales del sistema Linux.
 
 ---
 
