@@ -100,7 +100,7 @@ Clonar el repositorio:
 
 ```bash
 git clone https://github.com/FabianaRojasCondori/Programaci-n-de-Sistemas---PROYECTO-FINAL-.git
-cd Programacion-de-Sistemas---PROYECTO-FINAL
+cd Programaci-n-de-Sistemas---PROYECTO-FINAL-
 ```
 
 Compilar el proyecto:
